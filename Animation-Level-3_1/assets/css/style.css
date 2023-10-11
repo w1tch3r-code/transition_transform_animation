@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+/* ========================================================== 
+                            Resets
+========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ========================================================== 
+                        Image Links
+========================================================== */
+
+/* https://source.unsplash.com/random?night sky */
+/* https://source.unsplash.com/random/?Cryptocurrency&1 */
+/* https://picsum.photos/300/300?random=1 */
+
+/* ========================================================== 
+                            Fonts
+========================================================== */
+
+/* ========================================================== 
+                Variables / Custom Properties
+========================================================== */
+
+/* ========================================================== 
+                            Body
+========================================================== */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+    background-color: lightgray;
+    height: 100vh;
+}
+
+
+/* ========================================================== 
+                            Content
+========================================================== */
+
+article {
+    position: relative;
+}
+
+article div {
+    position: absolute;
+    margin-top: 25vh;
+    margin-left: 40vw;
+    width: 100px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.first {
+    animation: circle1 4s ease-in-out 0s infinite;
+}
+
+.second {
+    animation: circle2 4s ease-in-out 1s infinite;
+}
+
+.third {
+    animation: circle2 4s ease-in-out 2s infinite;
+}
+
+.fourth {
+    
+    animation: circle2 4s ease-in-out 3s infinite;
+}
+
+
+
+@keyframes circle1 {
+    0% {
+        background-color: red;
+        transform: translate(0, 0);
+    }
+
+    25% {
+        background-color: yellow;
+        transform: translate(300px, 0);
+    }
+
+    50% {
+        background-color: green;
+        transform: translate(300px, 300px);
+    }
+
+    75% {
+        background-color: blue;
+        transform: translate(0, 300px);
+    }
+
+    100% {
+        background-color: red;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes circle2 {
+    0% {
+        background-color: red;
+        transform: translate(0, 0);
+    }
+
+    25% {
+        background-color: yellow;
+        transform: translate(300px, 0);
+    }
+
+    50% {
+        background-color: green;
+        transform: translate(300px, 300px);
+    }
+
+    75% {
+        background-color: blue;
+        transform: translate(0, 300px);
+    }
+}
+
+
+

@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/* ========================================================== 
+                            Resets
+========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ========================================================== 
+                        Image Links
+========================================================== */
+
+/* https://source.unsplash.com/random?night sky */
+/* https://source.unsplash.com/random/?Cryptocurrency&1 */
+/* https://picsum.photos/300/300?random=1 */
+
+/* ========================================================== 
+                            Fonts
+========================================================== */
+
+/* ========================================================== 
+                Variables / Custom Properties
+========================================================== */
+
+/* ========================================================== 
+                            Body
+========================================================== */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+    background-color: #222222
+}
+
+
+/* ========================================================== 
+                            Content
+========================================================== */
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+article img {
+    /* box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.5); */
+    border: 5px solid rgba(255, 255, 255, 1);
+}
+
+article img:hover {
+    animation: shadow 10s ease-in-out infinite alternate;
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: -15px -15px 30px 10px #1B2069, 15px 15px 30px 10px #3A576E;
+    }
+
+    20% {
+        box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.5);
+    }
+
+    40% {
+        box-shadow: -15px -15px 30px 10px #1B2069, 15px 15px 30px 10px #3A576E;
+    }
+
+    50% {
+        box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.5);
+    }
+
+    60% {
+        box-shadow: -15px -15px 30px 10px #1B2069, 15px 15px 30px 10px #3A576E;
+    }
+
+    80% {
+        box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.5);
+    }
+
+    100% {
+        box-shadow: -15px -15px 30px 10px #1B2069, 15px 15px 30px 10px #3A576E;
+    }
+}
+
